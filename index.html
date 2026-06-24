@@ -1,90 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DROE | Luxury Experience</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap');
-        
-        body { 
-            font-family: 'Poppins', sans-serif; 
-            margin: 0; 
-            background-color: #ffffff; 
-            color: #1a1a1a; 
-            text-align: center; 
-        }
-        
-        /* Hero Section - Elegance */
-        .hero { 
-            padding: 150px 20px; 
-            background-color: #fdfdfd; 
-            border-bottom: 1px solid #eee;
-        }
-        .hero h1 { 
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem; 
-            font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: 5px;
-        }
-        .hero p { 
-            font-size: 1.1rem; 
-            color: #666; 
-            text-transform: uppercase; 
-            letter-spacing: 3px; 
-        }
-
-        /* Menu Grid - Minimalist */
-        .menu-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 40px; 
-            padding: 80px 10%; 
-        }
-        .menu-item { 
-            padding: 20px; 
-            transition: transform 0.5s ease; 
-        }
-        .menu-item:hover { transform: translateY(-10px); }
-        
-        .menu-item img { 
-            width: 100%; 
-            height: 400px; 
-            object-fit: cover; 
-            filter: grayscale(20%);
-        }
-        .menu-item h3 { 
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin: 20px 0 10px; 
-        }
-        .menu-item p { 
-            font-size: 0.9rem; 
-            color: #999; 
-            letter-spacing: 1px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dior Luxury</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <h1>DROE</h1>
-        <p>Exceptional Taste</p>
-    </header>
+  <header>
+    <div class="logo">DIOR</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Collection</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <main class="menu-grid">
-        <div class="menu-item">
-            <img src="cat.jpg" alt="Luxury Dish">
-            <h3>Signature Selection</h3>
-            <p>Refined experience</p>
-        </div>
-        <div class="menu-item">
-            <img src="cat.jpg" alt="Artisan Dish">
-            <h3>Artisan Creation</h3>
-            <p>Exquisite craft</p>
-        </div>
-    </main>
+  <section class="hero">
+    <h1>DAIRE</h1>
+    <p>Luxury Fashion • Elegance • Timeless Style</p>
+    <button>Explore Collection</button>
+  </section>
+
+  <section class="products">
+    <div class="card">
+      <h2>New Collection</h2>
+      <p>Discover modern elegance from Dior.</p>
+    </div>
+
+    <div class="card">
+      <h2>Handbags</h2>
+      <p>Signature luxury bags crafted in perfection.</p>
+    </div>
+
+    <div class="card">
+      <h2>Fragrance</h2>
+      <p>Iconic scents that define luxury.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Dior Inspired Landing Page</p>
+  </footer>
 
 </body>
 </html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: black;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to bottom, black, #1a1a1a);
+}
+
+.hero h1 {
+  font-size: 80px;
+  letter-spacing: 10px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  border-top: 1px solid #333;
+}

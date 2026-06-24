@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html lang="en"> 
-</head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unkown Company </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Menu | Unknown Company</title>
+    <style>
+        body { font-family: 'Helvetica', sans-serif; margin: 0; text-align: center; color: #333; }
+        
+        /* Hero Section */
+        .hero { padding: 100px 20px; background: #f8f8f8; }
+        .hero h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* Menu Grid */
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; }
+        .menu-item { border: 1px solid #eee; padding: 20px; transition: 0.3s; }
+        .menu-item:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .menu-item img { width: 100%; height: 200px; object-fit: cover; }
+        .menu-item h3 { margin: 15px 0 5px; }
+        .menu-item p { color: #888; }
+    </style>
 </head>
 <body>
 
-    <header>
-        <img src="cat.jpg" alt="Unknown Company Logo" width="120">
+    <header class="hero">
         <h1>Unknown Company</h1>
+        <p>Experience the finest culinary creations.</p>
     </header>
 
-    <main>
-    <h2>Welcome</h2>
-    <p>Welcome to the Official Website of Unknown Company.</p>
-    <main> 
+    <main class="menu-grid">
+        <div class="menu-item">
+            <img src="cat.jpg" alt="Dish">
+            <h3>Signature Dish</h3>
+            <p>P500.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="cat.jpg" alt="Dish">
+            <h3>Artisan Dessert</h3>
+            <p>P350.00</p>
+        </div>
+    </main>
 
-    </body>
-    </html>
+</body>
+</html>
